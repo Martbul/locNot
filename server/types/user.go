@@ -1,6 +1,12 @@
 package types
 
 type User struct {
-	ID   int    `json:"id"`
-	NAME string `json:"name"`
+	Id   int    `json:"id"`
+	Name string `json:"name"`
+	Remainders reminder[] `json:"remainders"`
+
+}
+
+func (u *User) ValidateUser() {
+
 }
